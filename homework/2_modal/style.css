@@ -1,0 +1,93 @@
+* {
+    font-family: Tahoma;
+    color: #333;
+}
+
+body {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.login-modal {
+    width: 600px;
+    min-height: 200px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+}
+
+.login-modal button {
+    border-radius: 3px;
+}
+
+.login-modal-header, .login-modal-body, .login-modal-footer {
+    padding: 5px;
+}
+
+.login-modal-header, .login-modal-footer {
+    height: 50px;
+}
+
+.login-modal-header {
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.login-modal-header h1 {
+    margin: 0;
+    display: inline-block;
+}
+
+.login-modal-header button[type=reset] {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    padding: 0;
+
+    float: right;
+
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #cdcdcd;
+}
+
+.login-modal-body {
+    height: 100%; /* What should be here so that the body fills all the space it can get? */
+}
+
+.login-modal-body .input-line {
+    margin: 10px;
+    text-align: center;
+}
+
+.login-modal-body .input-line label {
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+}
+
+.login-modal-body .input-line input {
+    display: inline-block;
+    width: 150px;
+}
+
+.login-modal-body input::placeholder {
+    color: #929292;
+}
+
+.login-modal-footer {
+    border-top: 1px solid #cdcdcd;
+    text-align: right;
+}
+
+.login-modal-footer button[type=submit] {
+    background-color: #bada55;
+    color: darkgreen;
+
+    border: 2px solid #cdcdcd;
+}
