@@ -87,9 +87,9 @@ body {
     border-top: 1px solid #cdcdcd;
     text-align: right;
 	
-	position: absolute;
-	bottom: 0;
-	width: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .login-modal-footer button[type=submit] {
