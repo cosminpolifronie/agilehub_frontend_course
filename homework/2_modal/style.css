@@ -1,6 +1,7 @@
 * {
     font-family: Tahoma;
     color: #333;
+	box-sizing: border-box;
 }
 
 body {
@@ -26,7 +27,7 @@ body {
 }
 
 .login-modal-header, .login-modal-body, .login-modal-footer {
-    padding: 5px;
+	padding: 5px;
 }
 
 .login-modal-header, .login-modal-footer {
@@ -57,12 +58,14 @@ body {
 }
 
 .login-modal-body {
-    height: 100%; /* What should be here so that the body fills all the space it can get? */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .login-modal-body .input-line {
     margin: 10px;
-    text-align: center;
 }
 
 .login-modal-body .input-line label {
@@ -83,6 +86,10 @@ body {
 .login-modal-footer {
     border-top: 1px solid #cdcdcd;
     text-align: right;
+	
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 .login-modal-footer button[type=submit] {
